@@ -1,32 +1,113 @@
 <!DOCTYPE html>
+<!-- Zeigt dem Browser, dass es sich um ein modernes HTML5-Dokument handelt -->
 <html lang="de">
+
 <head>
+    <!-- Zeichenkodierung (UTF-8) für fehlerfreie Umlaute (ä, ö, ü) -->
     <meta charset="UTF-8">
+    
+    <!-- Macht die Website auf Smartphones und Tablets passgenau (Responsive Design) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Der Name der Seite im Browser-Tab -->
     <title>Portfolio | Angehender Wirtschaftsingenieur</title>
+
+    <!-- CSS-Bereich: Hier wird das Aussehen (Farben, Abstände, Layout) gesteuert -->
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
-        header { border-bottom: 2px solid #0056b3; padding-bottom: 20px; margin-bottom: 30px; }
-        h1 { color: #0056b3; margin-bottom: 5px; }
-        .subtitle { font-size: 1.2em; color: #666; font-weight: bold; }
-        section { margin-bottom: 35px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-top: 15px; }
-        .card { border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: #f9f9f9; display: flex; flex-direction: column; justify-content: space-between; }
-        .card h3 { margin-top: 0; color: #0056b3; }
-        .btn { display: inline-block; padding: 8px 15px; background-color: #0056b3; color: white; text-decoration: none; border-radius: 5px; font-size: 0.9em; margin-top: 10px; text-align: center; }
-        footer { border-top: 1px solid #ddd; padding-top: 15px; font-size: 0.9em; color: #666; text-align: center; }
+        /* Grunddesign für die gesamte Seite */
+        body { 
+            font-family: Arial, sans-serif; 
+            line-height: 1.6; 
+            max-width: 800px; /* Begrenzt die Inhaltsbreite für optimale Lesbarkeit */
+            margin: 0 auto;  /* Zentriert die gesamte Seite auf dem Bildschirm */
+            padding: 20px; 
+            color: #333;     /* Dunkelgrauer Text für angenehmen Kontrast */
+        }
+
+        /* Styling für den Kopfbereich */
+        header { 
+            border-bottom: 2px solid #0056b3; /* Blaue Trennlinie unter dem Header */
+            padding-bottom: 20px; 
+            margin-bottom: 30px; 
+        }
+
+        /* Hauptüberschrift (Dein Name) */
+        h1 { 
+            color: #0056b3; 
+            margin-bottom: 5px; 
+        }
+
+        /* Styling für die Unterüberschrift */
+        .subtitle { 
+            font-size: 1.2em; 
+            color: #666; 
+            font-weight: bold; 
+        }
+
+        /* Abstand zwischen den Hauptabschnitten der Seite */
+        section { 
+            margin-bottom: 35px; 
+        }
+
+        /* Automatisches Kachel-Grid: Ordnet Kacheln nebeneinander oder auf Handys untereinander an */
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+            gap: 15px; 
+            margin-top: 15px; 
+        }
+
+        /* Einzelne Kachel-Box */
+        .card { 
+            border: 1px solid #ddd; 
+            padding: 15px; 
+            border-radius: 8px; /* Abgerundete Ecken */
+            background: #f9f9f9; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-between; /* Drückt den Button immer ganz nach unten */
+        }
+
+        /* Überschriften innerhalb der Kacheln */
+        .card h3 { 
+            margin-top: 0; 
+            color: #0056b3; 
+        }
+
+        /* Verwandelt den Link in einen blauen Button */
+        .btn { 
+            display: inline-block; 
+            padding: 8px 15px; 
+            background-color: #0056b3; 
+            color: white; 
+            text-decoration: none; /* Entfernt den Unterstrich des Links */
+            border-radius: 5px; 
+            font-size: 0.9em; 
+            margin-top: 10px; 
+            text-align: center; 
+        }
+
+        /* Styling der Fußzeile */
+        footer { 
+            border-top: 1px solid #ddd; 
+            padding-top: 15px; 
+            font-size: 0.9em; 
+            color: #666; 
+            text-align: center; 
+        }
     </style>
 </head>
+
 <body>
 
-    <!-- 1. Hero-Header -->
+    <!-- 1. HERO-HEADER: Der erste Eindruck beim Öffnen der Seite -->
     <header>
         <h1>R2</h1>
         <p class="subtitle">Angehender Wirtschaftsingenieur mit Schwerpunkt Elektrotechnik (B.Eng.) | Generalist mit Tech-Mindset</p>
         <p>Verbindung von technischem Verständnis und wirtschaftlichem Denken – lösungsorientiert, strukturstark und mit hoher Eigeninitiative.</p>
     </header>
 
-    <!-- 2. About / Profil -->
+    <!-- 2. ABOUT: Kurze Zusammenfassung deines beruflichen Profils -->
     <section>
         <h2>Über mich</h2>
         <p>
@@ -34,19 +115,22 @@
         </p>
     </section>
 
-    <!-- 3. Schwerpunkte & Highlights -->
+    <!-- 3. HIGHLIGHTS: Übersicht deiner wichtigsten Bereiche in Kachelform -->
     <section>
         <h2>Schwerpunkte & Einblicke</h2>
         <div class="grid">
             
+            <!-- Kachel 1: Verlinkung zum Manual of Me -->
             <div class="card">
                 <div>
                     <h3>Manual of Me</h3>
                     <p>Wie ich ticke, wie ich kommuniziere und wie eine erfolgreiche Zusammenarbeit mit mir im Team aussieht.</p>
                 </div>
+                <!-- href zeigt genau auf deine zweite HTML-Datei -->
                 <a href="manualofme.html" class="btn">Manual of Me lesen →</a>
             </div>
 
+            <!-- Kachel 2: Lehrauftrag -->
             <div class="card">
                 <div>
                     <h3>Ingenieurmathematik</h3>
@@ -54,6 +138,7 @@
                 </div>
             </div>
 
+            <!-- Kachel 3: Tech-Fokus -->
             <div class="card">
                 <div>
                     <h3>Embedded Systems & Tech</h3>
@@ -61,6 +146,7 @@
                 </div>
             </div>
 
+            <!-- Kachel 4: Führungs- & Organrolle -->
             <div class="card">
                 <div>
                     <h3>Semestersprecher & Organisation</h3>
@@ -71,8 +157,10 @@
         </div>
     </section>
 
-    <!-- 4. Footer / Kontakt -->
+    <!-- 4. FOOTER: Kontakt & Copyright ganz unten -->
     <footer>
+        <!-- mailto: öffnet beim Klick direkt das E-Mail-Programm des Besuchers -->
+        <!-- target="_blank" öffnet LinkedIn in einem neuen Tab -->
         <p>Kontakt: <a href="mailto:deine-email@beispiel.de">deine-email@beispiel.de</a> | <a href="https://linkedin.com/in/deinprofil" target="_blank">LinkedIn Profil</a></p>
         <p><small>&copy; 2026 R2</small></p>
     </footer>
