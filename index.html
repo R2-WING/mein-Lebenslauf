@@ -11,9 +11,9 @@
         .subtitle { font-size: 1.2em; color: #666; font-weight: bold; }
         section { margin-bottom: 35px; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-top: 15px; }
-        .card { border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: #f9f9f9; }
+        .card { border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: #f9f9f9; display: flex; flex-direction: column; justify-content: space-between; }
         .card h3 { margin-top: 0; color: #0056b3; }
-        .btn { display: inline-block; padding: 8px 15px; background-color: #0056b3; color: white; text-decoration: none; border-radius: 5px; font-size: 0.9em; margin-top: 10px; }
+        .btn { display: inline-block; padding: 8px 15px; background-color: #0056b3; color: white; text-decoration: none; border-radius: 5px; font-size: 0.9em; margin-top: 10px; text-align: center; }
         footer { border-top: 1px solid #ddd; padding-top: 15px; font-size: 0.9em; color: #666; text-align: center; }
     </style>
 </head>
@@ -21,8 +21,8 @@
 
     <!-- 1. Hero-Header -->
     <header>
-        <h1>Ertu Geci</h1>
-        <p class="subtitle">Angehender Wirtschaftsingenieur mit Schwerpunkt Elektrotechnik (B.Eng.)</p>
+        <h1>R2</h1>
+        <p class="subtitle">Angehender Wirtschaftsingenieur mit Schwerpunkt Elektrotechnik (B.Eng.) | Generalist mit Tech-Mindset</p>
         <p>Verbindung von technischem Verständnis und wirtschaftlichem Denken – lösungsorientiert, strukturstark und mit hoher Eigeninitiative.</p>
     </header>
 
@@ -30,7 +30,7 @@
     <section>
         <h2>Über mich</h2>
         <p>
-            Als Wirtschaftsingenieur im 5. Fachsemester an der Rheinischen Hochschule Köln kombiniere ich analytische Ingenieurmethodik mit pragmatischem Handeln. Meine Schwerpunkte liegen an der Schnittstelle von Technik (Embedded Systems, C++) und strukturierter Organisation. Als studentischer Lehrbeauftragter für Ingenieurmathematik und durch meine Erfahrung in der Selbstständigkeit zeichnen mich klare Kommunikation, Zuverlässigkeit und hoher Qualitätsanspruch aus.
+            Als Wirtschaftsingenieur im 5. Fachsemester an der Rheinischen Hochschule Köln kombiniere ich analytische Ingenieurmethodik mit pragmatischem Handeln. Meine Schwerpunkte liegen an der Schnittstelle von Technik (Embedded Systems, C++) und strukturierter Organisation. Als studentischer Lehrbeauftragter für Ingenieurmathematik, Semestersprecher und durch meine Erfahrung in der Selbstständigkeit zeichnen mich klare Kommunikation, Zuverlässigkeit und hoher Qualitätsanspruch aus.
         </p>
     </section>
 
@@ -40,19 +40,32 @@
         <div class="grid">
             
             <div class="card">
-                <h3>Manual of Me</h3>
-                <p>Wie ich ticke, wie ich kommuniziere und wie eine erfolgreiche Zusammenarbeit mit mir im Team aussieht.</p>
-                <a href="manual-of-me.html" class="btn">Manual of Me lesen →</a>
+                <div>
+                    <h3>Manual of Me</h3>
+                    <p>Wie ich ticke, wie ich kommuniziere und wie eine erfolgreiche Zusammenarbeit mit mir im Team aussieht.</p>
+                </div>
+                <a href="manualofme.html" class="btn">Manual of Me lesen →</a>
             </div>
 
             <div class="card">
-                <h3>Ingenieurmathematik</h3>
-                <p>Vermittlung komplexer Konzepte als studentischer Lehrbeauftragter & Förderung von Erstsemestern.</p>
+                <div>
+                    <h3>Ingenieurmathematik</h3>
+                    <p>Vermittlung komplexer Konzepte als studentischer Lehrbeauftragter & Förderung von Erstsemestern.</p>
+                </div>
             </div>
 
             <div class="card">
-                <h3>Embedded Systems & Tech</h3>
-                <p>Anwendung von C++ und Arduino-Programmierung zur Schnittstellenlösung technischer Aufgaben.</p>
+                <div>
+                    <h3>Embedded Systems & Tech</h3>
+                    <p>Anwendung von C++ und Arduino-Programmierung zur Schnittstellenlösung technischer Aufgaben.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h3>Semestersprecher & Organisation</h3>
+                    <p>Schnittstelle zwischen Studierenden und Hochschule, Interessenvertretung sowie Organisation des Studiengangs.</p>
+                </div>
             </div>
 
         </div>
@@ -61,7 +74,7 @@
     <!-- 4. Footer / Kontakt -->
     <footer>
         <p>Kontakt: <a href="mailto:deine-email@beispiel.de">deine-email@beispiel.de</a> | <a href="https://linkedin.com/in/deinprofil" target="_blank">LinkedIn Profil</a></p>
-        <p><small>&copy; 2026 [Dein Vorname Nachname]</small></p>
+        <p><small>&copy; 2026 R2</small></p>
     </footer>
 
 </body>
